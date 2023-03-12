@@ -44,7 +44,7 @@ COMMAND | FUNCTION
 The easiest way to host this bot
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/SANGRAM-MUSIC/herokumusic"><img src="https://img.shields.io/badge/HEROKU-DEPLOY-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/THE-VIP-BOY-OP/HEROKU-MUSIC"><img src="https://img.shields.io/badge/HEROKU-DEPLOY-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
 
 
 ## VPS Deployment
