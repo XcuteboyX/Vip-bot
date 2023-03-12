@@ -1,4 +1,4 @@
-import io
+Pimport io
 from os import path
 from typing import Callable
 from asyncio.queues import QueueEmpty
@@ -75,7 +75,7 @@ async def play(c: Client, m: Message):
             f"💡 𝗧𝗼 𝘂𝘀𝗲 𝗺𝗲, 𝗜 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗯𝗲 𝗮𝗻 **𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫😌** 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗳𝗼𝗹𝗹𝗼𝘄𝗶𝗻𝗴 **𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧𝐬🥀**:\n\n» ❌ 𝙳𝚎𝚕𝚎𝚝𝚎 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜🍁\n» ❌ __Add users__\n» ❌ 𝙼𝚊𝚗𝚊𝚐𝚎 𝚅𝚒𝚍𝚎𝚘 𝙲𝚑𝚊𝚝🍁\n\n🥀𝗗𝗮𝘁𝗮 𝗜𝘀 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰 𝗥𝗲𝗹𝗼𝗮𝗱 𝗔𝗳𝘁𝗲𝗿 𝗣𝗿𝗼𝗺𝗼𝘁𝗲 𝗠𝗲🥀"
         )
         return
-    if not a.can_manage_voice_chats:
+    if not a.can_manage_voice_chats: 
         await m.reply_text(
             "𝗠𝗶𝘀𝘀𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻🥺:" + "\n\n» ❌ 𝙼𝚊𝚗𝚊𝚐𝚎 𝚅𝚒𝚍𝚎𝚘 𝙲𝚑𝚊𝚝🍁"
         )
@@ -93,7 +93,7 @@ async def play(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **Unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **𝐈𝐬 𝐁𝐚𝐧𝐧𝐞𝐝 𝐈𝐧 𝐓𝐡𝐢𝐬 𝐆𝐫𝐨𝐮𝐩** {m.chat.title}\n\n» ** 𝐔𝐧𝐛𝐚𝐧  𝐓𝐡𝐞  𝐔𝐬𝐞𝐫𝐛𝐨𝐭  𝐅𝐢𝐫𝐬𝐭  𝐈𝐟  𝐘𝐨𝐮  𝐖𝐚𝐧𝐭  𝐓𝐨  𝐔𝐬𝐞  𝐓𝐡𝐢𝐬  𝐁𝐨𝐭.**"
             )
             return
     except UserNotParticipant:
@@ -101,7 +101,7 @@ async def play(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **Userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐅𝐚𝐢𝐥𝐞𝐝 𝐓𝐨 𝐉𝐨𝐢𝐧**\n\n**𝐑𝐞𝐚𝐬𝐨𝐧**: `{e}`")
                 return
         else:
             try:
@@ -117,11 +117,11 @@ async def play(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐅𝐚𝐢𝐥𝐞𝐝 𝐓𝐨 𝐉𝐨𝐢𝐧**\n\n**𝐑𝐞𝐚𝐬𝐨𝐧**: `{e}`"
                 )
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **Downloading audio...**")
+            suhu = await replied.reply("📥 **𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐀𝐮𝐝𝐢𝐨...🥲**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -139,7 +139,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"**🥳𝐀𝐝𝐝𝐞𝐝 𝐎𝐧 𝐋𝐢𝐧𝐞 »** `{pos}`\n\n**💞𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨:** [{songname}]({link}) | `𝐌𝐮𝐬𝐢𝐜`\n\n**🌷𝐂𝐡𝐚𝐭 𝐈𝐝:** `{chat_id}`\n\n**✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲:** {m.from_user.mention()}",
+                    caption=f"**🥳𝐀𝐝𝐝𝐞𝐝 𝐎𝐧 𝐋𝐢𝐧𝐞 »** `{pos}`\n\n**💞𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨: ** [{songname}]({link}) | `𝐌𝐮𝐬𝐢𝐜`\n\n**🌷𝐂𝐡𝐚𝐭 𝐈𝐝: ** `{chat_id}`\n\n**✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲: ** {m.from_user.mention()}",
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
             else:
@@ -156,18 +156,18 @@ async def play(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_2}",
-                    caption=f"**✨𝐍𝐚𝐦𝐞:-** [{songname}]({link})\n\n**🌷𝐂𝐡𝐚𝐭 𝐈𝐝:-** `{chat_id}`\n\n**🎉𝐒𝐭𝐚𝐭𝐮𝐬:-** `𝐏𝐥𝐚𝐲𝐢𝐧𝐠`\n\n**✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲:-** {requester}\n\n**🙂𝐏𝐥𝐚𝐲𝐢𝐧𝐠 𝐓𝐲𝐩𝐞:-** `𝐌𝐮𝐬𝐢𝐜`",
+                    caption=f"**✨𝐍𝐚𝐦𝐞: ** [{songname}]({link})\n\n**🌷𝐂𝐡𝐚𝐭 𝐈𝐝: ** `{chat_id}`\n\n**🎉𝐒𝐭𝐚𝐭𝐮𝐬: ** `𝐏𝐥𝐚𝐲𝐢𝐧𝐠`\n\n**✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲: ** {requester}\n\n**🙂𝐏𝐥𝐚𝐲𝐢𝐧𝐠 𝐓𝐲𝐩𝐞: ** `𝐌𝐮𝐬𝐢𝐜`",
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
              except Exception as e:
                 await suhu.delete()
-                await m.reply_text(f"🚫 error:\n\n» {e}")
+                await m.reply_text(f"🚫  𝗘𝗿𝗿𝗼𝗿:\n\n» {e}")
         
     else:
         if len(m.command) < 2:
          await m.reply_photo(
                      photo=f"{IMG_5}",
-                    caption="**🌹𝐓𝐘𝐏𝐄:- /play 𝐆𝐢𝐯𝐞  𝐚  𝐓𝐢𝐭𝐥𝐞  𝐒𝐨𝐧𝐠  𝐓𝐨  𝐏𝐥𝐚𝐲  𝐌𝐮𝐬𝐢𝐜🥀**",
+                    caption="**🌹𝐓𝐘𝐏𝐄= /play 🤖 𝐆𝐢𝐯𝐞 🙃 𝐒𝐨𝐦𝐞 💿 𝐐𝐮𝐞𝐫𝐲 😍 \n💞 𝐓𝐨 🔊 𝐏𝐥𝐚𝐲 🥀 𝐒𝐨𝐧𝐠 🌷...**",
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -184,7 +184,7 @@ async def play(c: Client, m: Message):
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await suhu.edit("💬 **No Results Found.\n Type Again With Correct Song Name.**")
+                await suhu.edit("💬 **𝐍𝐨 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝.\n 🍁𝐓𝐲𝐩𝐞 𝐀𝐠𝐚𝐢𝐧 𝐖𝐢𝐭𝐡 𝐂𝐨𝐫𝐫𝐞𝐜𝐭 𝐒𝐨𝐧𝐠 𝐍𝐚𝐦𝐞🥀.**")
             else:
                 songname = search[0]
                 title = search[0]
@@ -195,7 +195,7 @@ async def play(c: Client, m: Message):
                 gcname = m.chat.title
                 videoid = search[4]
                 dlurl = f"https://www.youtubepp.com/watch?v={videoid}"
-                info = f"https://t.me/TG_MANAGER_ROBOT?start=info_{videoid}"
+                info = f"https://t.me/{BOT_USERNAME}?start=info_{videoid}"
                 keyboard = stream_markup(user_id, dlurl)
                 playimg = await play_thumb(videoid)
                 queueimg = await queue_thumb(videoid)
@@ -215,7 +215,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=queueimg,
-                            caption=f"🥳𝐀𝐝𝐝𝐞𝐝 𝐎𝐧 𝐋𝐢𝐧𝐞 {pos}\n\n✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲:{requester}\n\n💞𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨- [🥀𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞🥀]({info})",
+                            caption=f"🥳𝐀𝐝𝐝𝐞𝐝 𝐎𝐧 𝐋𝐢𝐧𝐞> {pos}\n\n✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲: {requester}\n\n💞𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨: [🥀𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞🥀]({info})",
                             reply_markup=InlineKeyboardMarkup(keyboard),
                         )
                     else:
@@ -247,9 +247,9 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=playimg,
-                                caption=f"🎉𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐏𝐥𝐲𝐢𝐧𝐠 𝐔𝐫 𝐂𝐮𝐭𝐞 𝐌𝐮𝐬𝐢𝐜😍\n\n✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲:{requester}\n\n💞𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨:- [🥀𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞🥀]({info})",
+                                caption=f"🎉𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐏𝐥𝐲𝐢𝐧𝐠 𝐔𝐫 𝐂𝐮𝐭𝐞 𝐌𝐮𝐬𝐢𝐜😍\n\n✨𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲: {requester}\n\n💞𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨: [🥀𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞🥀]({info})",
                                 reply_markup=InlineKeyboardMarkup(keyboard),
                             )
                         except Exception as ep:
                             await suhu.delete()
-                            await m.reply_text(f"💬 error: `{ep}`")
+                            await m.reply_text(f"💬 𝐄𝐫𝐫𝐨𝐫: `{ep}`")
