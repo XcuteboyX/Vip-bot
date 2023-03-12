@@ -17,10 +17,12 @@ from Process.decorators import authorized_users_only
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-        await message.reply_text(
-        f"""━━━━━━━━━━━━━━━━━━━━━━━━
-💥 𝐇𝐞𝐥𝐥𝐨, 𝐈 𝐚𝐦 𝐒𝐮𝐩𝐞𝐫𝐟𝐚𝐬𝐭 𝐇𝐢𝐠𝐡 𝐐𝐮𝐚𝐥𝐢𝐭𝐲
-𝐍𝐨 𝐋𝐚𝐠 𝐕𝐂 𝐌𝐮𝐬𝐢𝐜 𝐏𝐥𝐚𝐲𝐞𝐫 𝐁𝐨𝐭.
+        await message.reply_photo(
+        photo=f"https://te.legra.ph/file/33792e73e6fb56533f770.jpg",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━
+🥀 𝐇𝐞𝐥𝐥𝐨, 𝐈 𝐀𝐦 𝐀𝐧 📀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 𝐀𝐧𝐝
+𝐒𝐮𝐩𝐞𝐫𝐟𝐚𝐬𝐭 𝐕𝐂 𝐏𝐥𝐚𝐲𝐞𝐫 » 𝐅𝐨𝐫 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐧𝐝 𝐆𝐫𝐨𝐮𝐩𝐬 ✨ ...
 
 ┏━━━━━━━━━━━━━━━━━━━┓
 ┣★ 𝐎𝐰𝐧𝐞𝐫'𝐱𝐃 : @THE_VIP_BOY
@@ -28,8 +30,11 @@ async def start(_, message: Message):
 ┣★ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 » : @TG_FRIENDSS
 ┗━━━━━━━━━━━━━━━━━━━┛
 
-💞 𝐉𝐮𝐬𝐭 𝐀𝐝𝐝 𝐌𝐞 » 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐀𝐧𝐝
-𝐄𝐧𝐣𝐨𝐲 𝐒𝐮𝐩𝐞𝐫 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 ❥︎𝐌𝐮𝐬𝐢𝐜.
+💐 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 🕊️ 𝐀𝐝𝐝 𝐌𝐞 𝐢𝐧 𝐘𝐨𝐮𝐫
+𝐆𝐫𝐨𝐮𝐩, 🌺 𝐀𝐧𝐝 𝐄𝐧𝐣𝐨𝐲 ❥︎ 𝐒𝐮𝐩𝐞𝐫 𝐇𝐢𝐠𝐡
+𝐐𝐮𝐚𝐥𝐢𝐭𝐲 𝐀𝐮𝐝𝐢𝐨 𝐀𝐧𝐝 𝐕𝐢𝐝𝐞𝐨 🌷 ...
+
+📡 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲: [𝐕𝐈𝐏 𝐁𝐎𝐘](https://t.me/the_vip_boy) 💞 ...
 ━━━━━━━━━━━━━━━━━━━━━━━━
         """,
         reply_markup=InlineKeyboardMarkup(
@@ -41,14 +46,18 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                       "🍒𝐉𝐨𝐢𝐧 𝐁𝐚𝐛𝐲🥀", url=f"https://t.me/VIP_CREATORS"
+                       "🍁𝐆𝐑𝐎𝐔𝐏🍁", url=f"https://t.me/VIP_CREATORS"
                     ),
                     InlineKeyboardButton(
-                       "😇𝐂𝐨𝐦𝐞 𝐇𝐞𝐫𝐞⛦⃕͜🇮🇳", url=f"https://t.me/TG_FRIENDSS"
+                       "🥀𝐎𝐅𝐅𝐈𝐂𝐄🥀", url=f"https://t.me/TG_FRIENDSS"
                     )
                 ],[
                     InlineKeyboardButton(
                         "★ 𝐎𝐰𝐧𝐞𝐫'𝐱𝐃 ★",
+                        url=f"https://t.me/THE_VIP_BOY",
+                    ),
+                    InlineKeyboardButton(
+                        "🌱𝐒𝐨𝐮𝐫𝐜𝐞🌱",
                         url=f"https://t.me/THE_VIP_BOY",
                     )
                 ]
