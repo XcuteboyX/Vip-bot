@@ -1,23 +1,25 @@
 {
-    "name": "RaiChu Music Bot",
+    "name": "VIP MUSIC BOT",
     "description": "Telegram bot for Streaming  Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/b581039c9a18d939d19dd.jpg",
+    "logo": "https://te.legra.ph/file/2ff2dab0dd5953e674c79.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "pyrogram"
     ],
-    "website": "https://t.me/BotDuniyaXd",
-    "repository": "https://github.com/SANGRAM-MUSIC/herokumusic",
+    "website": "https://t.me/TG_FRIENDSS",
+    "repository": "https://github.com/THE-VIP-BOY-OP/HEROKU-MUSIC",
     "success_url": "https://t.me/Tg_friendss",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
             "required": true
+            "value": "14050586"
         },
         "API_HASH": {
             "description": "your API_HASH from my.telegram.org",
             "required": true
+            "value": "42a60d9c657b106370c79bb0a8ac560c"
         },
         "BOT_TOKEN": {
             "description": "your bot token from @BotFather",
@@ -42,21 +44,22 @@
         "SUDO_USERS": {
             "description": "list of user ids to be added to sudo member list, or just fill with your id",
             "required": true
+            "value": "1808943146"
         },
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
             "required": false,
-            "value": "godzilla_chatting"
+            "value": "the_vip_bots"
         },
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": false,
-            "value": "BotDuniyaXd"
+            "value": "VIP_CREATORS"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
             "required": false,
-            "value": "MeCorw"
+            "value": "THE_VIP_BOY"
         }
     },
     "addons": [],
