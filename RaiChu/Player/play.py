@@ -56,7 +56,7 @@ useer = "NaN"
 ACTV_CALLS = []
 
     
-@Client.on_message(command(["play", "vplay", f"play@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["play", "cplay", "mukku", "tg", "vip", "kittu", "p", "vplay", f"play@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Client, m: Message):
     await m.delete()
     replied = m.reply_to_message
@@ -72,21 +72,21 @@ async def play(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 𝗧𝗼 𝘂𝘀𝗲 𝗺𝗲, 𝗜 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗯𝗲 𝗮𝗻 **𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫😌** 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗳𝗼𝗹𝗹𝗼𝘄𝗶𝗻𝗴 **𝐏𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧𝐬🥀**:\n\n» ❌ 𝙳𝚎𝚕𝚎𝚝𝚎 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜🍁\n» ❌ __Add users__\n» ❌ 𝙼𝚊𝚗𝚊𝚐𝚎 𝚅𝚒𝚍𝚎𝚘 𝙲𝚑𝚊𝚝🍁\n\n🥀𝗗𝗮𝘁𝗮 𝗜𝘀 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰 𝗥𝗲𝗹𝗼𝗮𝗱 𝗔𝗳𝘁𝗲𝗿 𝗣𝗿𝗼𝗺𝗼𝘁𝗲 𝗠𝗲🥀"
         )
         return
     if not a.can_manage_voice_chats:
         await m.reply_text(
-            "Missing required permission:" + "\n\n» ❌ __Manage video chat__"
+            "𝗠𝗶𝘀𝘀𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻🥺:" + "\n\n» ❌ 𝙼𝚊𝚗𝚊𝚐𝚎 𝚅𝚒𝚍𝚎𝚘 𝙲𝚑𝚊𝚝🍁"
         )
         return
     if not a.can_delete_messages:
         await m.reply_text(
-            "Missing required permission:" + "\n\n» ❌ __Delete messages__"
+            "𝗠𝗶𝘀𝘀𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻🥺:" + "\n\n» ❌ 𝙳𝚎𝚕𝚎𝚝𝚎 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜🍁"
         )
         return
     if not a.can_invite_users:
-        await m.reply_text("Missing required permission:" + "\n\n» ❌ __Add users__")
+        await m.reply_text("𝗠𝗶𝘀𝘀𝗶𝗻𝗴 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻🥺:" + "\n\n» ❌ 𝙰𝚍𝚍 𝚄𝚜𝚎𝚛𝚜🍁")
         return
     try:
         ubot = (await user.get_me()).id
