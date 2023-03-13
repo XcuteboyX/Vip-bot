@@ -4,7 +4,7 @@ ffmpeg-python
 py-tgcalls==0.8.1
 pyrogram==1.4.12
 youtube-search-python==1.4.9
-git+https://github.com/ytdl-patched/yt-dlp
+https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
 youtube_dl
 youtube-search
 python-dotenv
